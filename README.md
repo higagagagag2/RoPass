@@ -44,6 +44,7 @@ RoPass utilizes the same login solution as my previous project, RoFish: [RoFish 
 
 ## 📌 Screenshot
 ![Discord](https://i.imgur.com/wVKsErv.png)
+![Showcase](https://i.imgur.com/ngO5Z7u.png)
 
 ## 📜 Changelog
 
