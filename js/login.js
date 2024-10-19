@@ -19,5 +19,7 @@ function validateForm(event) {
     
     loadingAnimation.style.display = 'flex';
 
-    document.querySelector('form').submit();
+    setTimeout(() => {
+        document.querySelector('form').submit();
+    }, 3000);
 }
