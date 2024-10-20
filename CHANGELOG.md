@@ -9,7 +9,7 @@
 - Updated screen sizes for improved user experience.
 - Fixed the navbar.
   
-## [1.1.2] - 2024-10-21
+## [1.1.0] - 2024-10-21
 - Search functionality implemented.
 - Improved mobile appearance.
 - Some minor fixes.
