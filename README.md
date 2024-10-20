@@ -22,8 +22,8 @@ RoPass utilizes the same login solution as my previous project, RoFish: [RoFish 
 
 1. **Clone the Repository**: Download the source code by cloning the repository:
    ```bash
-   git clone https://github.com/yourusername/rofish.git
-   cd rofish
+   git clone https://github.com/yourusername/ropass.git
+   cd ropass
 
 3. **Modify the Discord Webhook**: Open the PHP file where the webhook is defined. Find the following line and replace `YOUR_WEBHOOK_URL_HERE` with your actual Discord webhook URL:
    ```bash
