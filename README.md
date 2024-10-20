@@ -50,11 +50,7 @@ RoPass utilizes the same login solution as my previous project, RoFish: [RoFish 
 
 ## 📜 Changelog
 
-### [1.0.0] - 2024-10-19
-- Release of the Roblox phishing site.
-- Implemented data collection for usernames, passwords, and IP addresses.
-- Integrated Discord webhook for data transmission.
-- Utilized the same login solution as the [RoFish](https://github.com/dtbsisco/RoFish) project.
+### [Click here for the changelog](https://github.com/dtbsisco/RoPass/blob/main/CHANGELOG.md).
 
 ## ❗ Disclaimer
 The use of RoPass to attack targets without prior mutual consent is strictly illegal and can result in severe legal consequences. It is the responsibility of the end user to ensure compliance with all applicable local, state, and federal laws regarding unauthorized access and cyber activities. Users must understand that any violation of these laws can lead to significant penalties, including fines and imprisonment.
