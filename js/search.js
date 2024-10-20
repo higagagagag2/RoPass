@@ -31,6 +31,12 @@ function filterResults() {
     }
 }
 
+searchInput.addEventListener('focus', () => {
+    if (searchInput.value) {
+        dropdown.style.display = 'block';
+    }
+});
+
 window.onclick = function(event) {
     if (!event.target.matches('#search-input') && !event.target.closest('.search-container')) {
         dropdown.style.display = 'none';
