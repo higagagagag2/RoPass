@@ -30,6 +30,8 @@
             <li>
                 <div class="search-container">
                     <input type="text" id="search-input" placeholder="Search" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="filterResults()">
+                    <img src="images/search.png" alt="Search Icon" class="search-icon">
+                    <img src="images/clear.png" alt="Clear Icon" class="clear-icon" onclick="clearSearch()">
                     <div id="dropdown" class="dropdown">
                         <div class="dropdown-item" id="experience-item">
                             <span class="search-text"></span> <span>in Experiences</span>
@@ -44,7 +46,6 @@
                             <span class="search-text"></span> <span>in Marketplace</span>
                         </div>
                     </div>
-                    <i class="fas fa-search"></i>
                 </div>
             </li>
         </ul>

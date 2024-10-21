@@ -1,11 +1,15 @@
 const dropdown = document.getElementById('dropdown');
 const searchInput = document.getElementById('search-input');
+const clearIcon = document.querySelector('.clear-icon');
+
+clearIcon.style.display = 'none';
 
 function filterResults() {
     const query = searchInput.value.toLowerCase();
     dropdown.innerHTML = '';
 
     if (query) {
+        clearIcon.style.display = 'block';
         const results = [
             { text: query, label: 'in Experiences', url: `https://www.roblox.com/discover/?Keyword=${query}`, class: 'experience-item' },
             { text: query, label: 'in People', url: `https://www.roblox.com/search/users?keyword=${query}`, class: 'people-item' },
@@ -27,6 +31,7 @@ function filterResults() {
 
         dropdown.style.display = 'block';
     } else {
+        clearIcon.style.display = 'none';
         dropdown.style.display = 'none';
     }
 }
@@ -34,6 +39,7 @@ function filterResults() {
 searchInput.addEventListener('focus', () => {
     if (searchInput.value) {
         dropdown.style.display = 'block';
+        clearIcon.style.display = 'block';
     }
 });
 
@@ -42,3 +48,12 @@ window.onclick = function(event) {
         dropdown.style.display = 'none';
     }
 };
+
+function clearSearch() {
+    searchInput.value = '';
+    dropdown.innerHTML = '';
+    dropdown.style.display = 'none';
+    clearIcon.style.display = 'none';
+}
+
+clearIcon.onclick = clearSearch;

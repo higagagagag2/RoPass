@@ -12,7 +12,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    margin: 0;
     overflow-x: hidden;
 }
 
@@ -260,12 +259,29 @@ body {
     outline: none;
 }
 
-.search-container i {
+.search-container img.search-icon {
+    opacity: 7;
     position: absolute;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    color: hsla(0,0%,100%,.7);
+    width: 20px;
+    height: auto;
+}
+
+.search-container img.clear-icon {
+    opacity: 7;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+
+.clear-icon {
+    display: none;
 }
 
 .search-text {
