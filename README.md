@@ -46,11 +46,7 @@ RoPass utilizes the same login solution as my previous project, RoFish: [RoFish 
 
 ## 📌 Screenshot
 ![Discord](https://i.imgur.com/wVKsErv.png)
-![Showcase](https://i.imgur.com/Mx9QfX1.png)
-
-## 📜 Changelog
-
-### [Click here for the changelog](https://github.com/dtbsisco/RoPass/blob/main/CHANGELOG.md).
+![Showcase](https://i.imgur.com/TRjxZAD.png)
 
 ## ❗ Disclaimer
 The use of RoPass to attack targets without prior mutual consent is strictly illegal and can result in severe legal consequences. It is the responsibility of the end user to ensure compliance with all applicable local, state, and federal laws regarding unauthorized access and cyber activities. Users must understand that any violation of these laws can lead to significant penalties, including fines and imprisonment.
