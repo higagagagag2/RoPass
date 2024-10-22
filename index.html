@@ -15,7 +15,8 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo">
+            <img src="images/logo1.png" class="logo-small">
+            <img src="images/logo2.png" class="logo-large">
         </div>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -30,19 +31,23 @@
             <li>
                 <div class="search-container">
                     <input type="text" id="search-input" placeholder="Search" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" oninput="filterResults()">
-                    <img src="images/search.png" alt="Search Icon" class="search-icon">
-                    <img src="images/clear.png" alt="Clear Icon" class="clear-icon" onclick="clearSearch()">
+                    <img src="images/search.png" class="search-icon">
+                    <img src="images/clear.png" class="clear-icon" onclick="clearSearch()">
                     <div id="dropdown" class="dropdown">
                         <div class="dropdown-item" id="experience-item">
+                            <img src="images/experiences.png" class="dropdown-icon">
                             <span class="search-text"></span> <span>in Experiences</span>
                         </div>
                         <div class="dropdown-item" id="people-item">
+                            <img src="images/people.png" class="dropdown-icon">
                             <span class="search-text"></span> <span>in People</span>
                         </div>
                         <div class="dropdown-item" id="groups-item">
+                            <img src="images/groups.png" class="dropdown-icon">
                             <span class="search-text"></span> <span>in Groups</span>
                         </div>
                         <div class="dropdown-item" id="marketplace-item">
+                            <img src="images/marketplace.png" class="dropdown-icon">
                             <span class="search-text"></span> <span>in Marketplace</span>
                         </div>
                     </div>
@@ -97,7 +102,10 @@
             <a href="https://www.roblox.com/info/terms">Terms</a>
             <a href="https://www.roblox.com/info/accessibility">Accessibility</a>
             <a href="https://www.roblox.com/info/privacy">Privacy</a>
-            <a href="https://www.roblox.com/my/account#!/privacy">Your Privacy Choices</a>
+            <a href="https://www.roblox.com/my/account#!/privacy">
+                Your Privacy Choices
+                <img src="images/privacy.png" class="privacy-icon">
+            </a>
             <a href="#">Cookie Options</a>
         </div>
         
