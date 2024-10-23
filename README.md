@@ -43,7 +43,7 @@ RoPass website is a Roblox phishing site designed to collect informations from u
 5. **Requirements**: There are no additional requirements. The website uses native HTML, CSS, and JavaScript. Ensure you have an active internet connection for third-party resources like FontAwesome and jQuery.
 
 ## 📌 Screenshot
-![Discord](https://i.imgur.com/wVKsErv.png)
+![Discord](https://i.imgur.com/Fqdaw68.png)
 ![Showcase](https://i.imgur.com/TRjxZAD.png)
 
 ## ❗ Disclaimer
