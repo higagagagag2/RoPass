@@ -12,8 +12,6 @@
 ## 🌐 RoPass
 RoPass website is a Roblox phishing site designed to collect informations from users, including their usernames, passwords, and IP addresses, which are then sent to a Discord webhook.
 
-RoPass utilizes the same login solution as my previous project, RoFish: [RoFish GitHub Repository](https://github.com/dtbsisco/RoFish).
-
 ## ⭐ Features
 - **Data Collection**: Captures usernames, passwords, and IP addresses from users.
 - **Discord Webhook**: Sends collected data directly to a specified Discord webhook.
